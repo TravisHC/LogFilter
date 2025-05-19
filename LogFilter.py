@@ -126,7 +126,7 @@ class LogFilterApp(QMainWindow):
         
         # 主题检测
         self.is_dark_theme = self.detect_dark_theme()
-        self.current_theme = "light" if not self.is_dark_theme else "dark"
+        self.current_theme = "system" # 默认跟随系统主题
 
         self.init_ui()
         self.setup_drag_drop()
