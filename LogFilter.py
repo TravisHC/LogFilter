@@ -491,7 +491,7 @@ class LogFilterApp(QMainWindow):
         self.preview.setPlainText("".join(lines))
         
         # 根据主题选择高亮颜色
-        if self.current_theme == "dark":
+        if self.current_theme == "dark" or (self.current_theme == "system" and self.is_dark_theme):
             # 深色主题高亮颜色
             keyword_bg_color = QColor("#404080")  # 深蓝色背景
             level_colors = {
